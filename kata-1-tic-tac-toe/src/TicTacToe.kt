@@ -1,5 +1,17 @@
+
+
+
 class TicTacToe {
-    fun giveMeValue(): Int {
-        return 1
+
+    private var board :String =  """###
+###
+###"""
+
+    fun getBoard() = board
+
+    fun playerMoves(row: Int, col: Int): Unit {
+        board = """###
+x##
+###"""
     }
 }

@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Kotlin-katas.iml" filepath="$PROJECT_DIR$/.idea/Kotlin-katas.iml" />
       <module fileurl="file://$PROJECT_DIR$/kata-1-tic-tac-toe/kata-1-tic-tac-toe.iml" filepath="$PROJECT_DIR$/kata-1-tic-tac-toe/kata-1-tic-tac-toe.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kata-2-various/kata-2-various.iml" filepath="$PROJECT_DIR$/kata-2-various/kata-2-various.iml" />
     </modules>
   </component>
 </project>
