@@ -16,7 +16,7 @@ internal class TicTacToeTest {
     }
 
     @Test
-    fun Player1Moves(){
+    fun `Player 1 makes his 1 Move` (){
         val game = TicTacToe()
         game.playerMoves(2,1)
         val actual = game.getBoard()
@@ -27,18 +27,18 @@ x##
         )
     }
 
-    @Test
-    fun TwoMoves(){
-        val game = TicTacToe()
-        game.playerMoves(1,0)
-        game.playerMoves(1,1)
-        val actual = game.getBoard()
-        assertEquals("""###
-xo#
-###""",
-            actual
-        )
-    }
+//    @Test
+//    fun TwoMoves(){
+//        val game = TicTacToe()
+//        game.playerMoves(1,0)
+//        game.playerMoves(1,1)
+//        val actual = game.getBoard()
+//        assertEquals("""###
+//xo#
+//###""",
+//            actual
+//        )
+//    }
 
 //    @Test
 //    fun CheckinitialGrid() {
