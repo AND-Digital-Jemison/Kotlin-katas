@@ -15,15 +15,44 @@ class Mumbling {
         var charsRepeat : String = ""
 
         if (word.length == 1)
-        return word
+            return word
 
         for(i in 0..word.length-1) {
             for(j in 0..i){
-                charsRepeat +="${word[i]}"
+                charsRepeat += "${word[i]}"
+            }
+            finalWord += "${charsRepeat}-"
+            charsRepeat = ""
+        }
+        return finalWord
+    }
+
+    fun getStringCapital( word: String): String{
+        var finalWord : String = ""
+        var charsRepeat : String = ""
+
+        for(i in 0..word.length-1) {
+            for(j in 0..i){
+                charsRepeat += if(j==0) "${word[i].uppercaseChar()}" else "${word[i].lowercaseChar()}"
             }
             finalWord += "${charsRepeat}-"
             charsRepeat = ""
         }
             return finalWord
+    }
+
+
+    fun getStringCapitalRemoveLastDash( word: String): String{
+        var finalWord : String = ""
+        var charsRepeat : String = ""
+
+        for(i in 0..word.length-1) {
+            for(j in 0..i){
+                charsRepeat += if(j==0) "${word[i].uppercaseChar()}" else "${word[i].lowercaseChar()}"
+            }
+            finalWord += if(i==word.length-1) "${charsRepeat}" else "${charsRepeat}-"
+            charsRepeat = ""
+        }
+        return finalWord
     }
 }
