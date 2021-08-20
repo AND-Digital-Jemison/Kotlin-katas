@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/Kotlin-katas.iml" filepath="$PROJECT_DIR$/.idea/Kotlin-katas.iml" />
       <module fileurl="file://$PROJECT_DIR$/kata-1-tic-tac-toe/kata-1-tic-tac-toe.iml" filepath="$PROJECT_DIR$/kata-1-tic-tac-toe/kata-1-tic-tac-toe.iml" />
       <module fileurl="file://$PROJECT_DIR$/kata-2-mumbling/kata-2-mumbling.iml" filepath="$PROJECT_DIR$/kata-2-mumbling/kata-2-mumbling.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kata-3-even-or-odd/kata-3-even-or-odd.iml" filepath="$PROJECT_DIR$/kata-3-even-or-odd/kata-3-even-or-odd.iml" />
     </modules>
   </component>
 </project>
