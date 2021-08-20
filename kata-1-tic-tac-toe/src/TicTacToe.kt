@@ -10,8 +10,14 @@ class TicTacToe {
     fun getBoard() = board
 
     fun playerMoves(row: Int, col: Int): Unit {
-        board = """###
+        if(col==1){
+            board = """###
+#x#
+###"""
+        }else {
+            board = """###
 x##
 ###"""
+        }
     }
 }

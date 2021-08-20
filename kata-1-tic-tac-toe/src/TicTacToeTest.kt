@@ -27,6 +27,18 @@ x##
         )
     }
 
+    @Test
+    fun `Player 1 makes his another Move` (){
+        val game = TicTacToe()
+        game.playerMoves(1,1)
+        val actual = game.getBoard()
+        assertEquals("""###
+#x#
+###""",
+            actual
+        )
+    }
+
 //    @Test
 //    fun TwoMoves(){
 //        val game = TicTacToe()
