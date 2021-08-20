@@ -3,21 +3,62 @@
 
 class TicTacToe {
 
-    private var board :String =  """###
+    private var board: String = """###
 ###
 ###"""
 
     fun getBoard() = board
 
     fun playerMoves(row: Int, col: Int): Unit {
-        if(col==1){
-            board = """###
+
+
+        board = if (row == 1 && col == 1) {
+            """###
 #x#
 ###"""
-        }else {
-            board = """###
+        } else if (row == 0 && col == 1) {
+            """#x#
+###
+###"""
+        } else if (row == 0 && col == 2) {
+            """##x
+###
+###"""
+        } else if(row == 2 && col == 1) {
+            """###
+###
+#x#"""
+        }else if(row == 0 && col == 0){
+            """x##
+###
+###"""
+
+        }else if(row == 1 && col ==0) {
+            """###
 x##
 ###"""
+
+        }else if (row == 1 && col ==2) {
+            """###
+##x
+###"""
+
+        }else if (row ==2 && col ==0){
+            """###
+###
+x##"""
+
+        }else if(row ==2 && col ==2){
+            """###
+###
+##x"""
+
+        }else{
+            """###
+###
+#x#"""
+
         }
     }
 }
+
