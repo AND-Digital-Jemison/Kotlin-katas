@@ -1,6 +1,6 @@
 import org.junit.jupiter.api.Test
-import kotlin.test.assertEquals
-import kotlin.test.assertContains
+import kotlin.test.*
+
 
 internal class TicTacToeTest {
 
@@ -12,7 +12,7 @@ internal class TicTacToeTest {
 ###
 ###""",
             actual
-        );
+        )
     }
 
     @Test
